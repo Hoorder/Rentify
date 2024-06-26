@@ -1,0 +1,12 @@
+@import '../utils/variables';
+@import 'typography';
+
+body {
+    background-color: $primary-color;
+}
+
+p {
+    font-size: $primary-font-size;
+    font-family: $font-familly;
+    font-weight: $font-weight;
+}
