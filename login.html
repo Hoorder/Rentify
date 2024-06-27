@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Rentify.pl</title>
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <meta name="description" content="System internetowy pozwalający mieć wszystkie informacje o swoich mieszkaniach i najemcach w jednym miejscu">
+    <meta name="keywords" content="Rent, magane, tent, notify, developer, apartaments">
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +18,28 @@
 </head>
 
 <body>
-    <p>dupa</p>
+    <div class="circle"></div>
+    <div class="logo"></div>
+
+    <div class="login">
+
+        <p class="login__heading">Witaj ponownie</h1>
+
+        <form class="login__form" action="/login" method="POST">
+
+          <div class="login__form--field">
+            <label for="username" class="login__form--label">Login:</label>
+            <input type="text" id="username" name="username" class="login__form--input" placeholder="Twój login">
+          </div>
+          <div class="login__form--field">
+            <label for="password" class="login__form--label">Hasło:</label>
+            <input type="password" id="password" name="password" class="login__form--input" placeholder="Twoje hasło">
+          </div>
+
+          <button type="submit" class="login__form-button">Zaloguj</button>
+        </form>
+        
+    </div>
 </body>
 
 </html>

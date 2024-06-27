@@ -3,10 +3,15 @@
 
 body {
     background-color: $primary-color;
-}
-
-p {
+    color: $white;
     font-size: $primary-font-size;
     font-family: $font-familly;
     font-weight: $font-weight;
+    letter-spacing: $spacing;
 }
+
+// p {
+//     font-size: $primary-font-size;
+//     font-family: $font-familly;
+//     font-weight: $font-weight;
+// }
