@@ -12,14 +12,49 @@
 }
 
 .wrapper__right__bottom {
-    flex: 1;
-    overflow-y: auto;
-
     display: flex;
-    justify-content: center;
-    align-items: baseline;
+    overflow-y: auto;
+    flex: 1;
     margin-top: 20px;
-    // align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #494949;
+        border-radius: 10px;
+      }
+    &::-webkit-scrollbar-track {
+        background: $primary-color;
+        border-radius: 10px;
+      }
+    &::-webkit-scrollbar-thumb:hover {
+        cursor: grab;
+        background: #575656;
+    }
+
+    &--uncenter {
+        justify-content: center;
+        align-items: baseline;
+    }
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+
+    &--center {
+        max-width: 1550px;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
 }
 
 .aboutRights {

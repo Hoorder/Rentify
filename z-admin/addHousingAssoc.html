@@ -37,7 +37,7 @@
         
                     <ul class="navigation__section__list">
                         <li class="navigation__section__item">
-                            <a href="index.html" class="navigation__section__link navigation__section__link--active">
+                            <a href="index.html" class="navigation__section__link">
                             <i class="fa-solid fa-house navigation__section__icon" aria-hidden="true"></i>Strona główna</a></li>
                     </ul>
                 </div>
@@ -53,7 +53,7 @@
                             <a href="addApartament.html" class="navigation__section__link">
                             <i class="fa-solid fa-hotel navigation__section__icon" aria-hidden="true"></i>Dodaj mieszkanie</a></li>
                         <li class="navigation__section__item">
-                            <a href="addHousingAssoc.html" class="navigation__section__link">
+                            <a href="addHousingAssoc.html" class="navigation__section__link navigation__section__link--active">
                             <i class="fa-solid fa-people-group navigation__section__icon" aria-hidden="true"></i>Dodaj wspólnote</a></li>
                     </ul>
                 </div>
@@ -116,6 +116,47 @@
     
             <div class="wrapper__right__bottom">
                 <main class="container">
+
+                    <div class="site">
+                        <p class="site__title">Dodawanie wspólnoty mieszkaniowej</p>
+                        <div class="site__line"></div>
+                    </div>
+
+                    <form class="form" action="#">
+
+                        <div class="form__section">
+                            <p class="form__section__title">Informacje wstępne</p>
+                            <div class="form__section__line"></div>
+                        </div>
+
+                        <div class="form__container">
+                            <div class="form__item">
+                                <label for="assocName" class="form__item__label">Nazwa wspólnoty mieszkaniowej</label>
+                                <input type="text" name="assocName" id="assocName" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="officeAdr" class="form__item__label">Adres biura</label>
+                                <input type="area" name="officeAdr" id="officeAdr" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="workHour" class="form__item__label">Godziny pracy</label>
+                                <input type="text" name="workHour" id="workHour" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="phoneNumber" class="form__item__label">Numer telefonu</label>
+                                <input type="text" name="phoneNumber" id="phoneNumber" class="form__item__input">
+                            </div>
+                        </div>
+
+                        <div class="form__container">
+                            <button class="button button--primary button--space">Dodaj wspólnote</button>
+                            <div class="information">
+                                <i class="fa-solid fa-circle-info information__icon" aria-hidden="true"></i>
+                                <p class="information__decription">Wspólnotę mieszkaniową <br> wiąże się z mieszkaniem</p>
+                            </div>
+                        </div>
+
+                    </form>
                 </main>
 
             </div>

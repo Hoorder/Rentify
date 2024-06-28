@@ -37,7 +37,7 @@
         
                     <ul class="navigation__section__list">
                         <li class="navigation__section__item">
-                            <a href="index.html" class="navigation__section__link navigation__section__link--active">
+                            <a href="index.html" class="navigation__section__link">
                             <i class="fa-solid fa-house navigation__section__icon" aria-hidden="true"></i>Strona główna</a></li>
                     </ul>
                 </div>
@@ -66,7 +66,7 @@
                             <a href="manageTentant.html" class="navigation__section__link">
                             <i class="fa-solid fa-people-roof navigation__section__icon" aria-hidden="true"></i>Zarządzaj najemcami</a></li>
                         <li class="navigation__section__item">
-                            <a href="manageTentant.html" class="navigation__section__link">
+                            <a href="manageApartament.html" class="navigation__section__link navigation__section__link--active">
                             <i class="fa-solid fa-list-check navigation__section__icon" aria-hidden="true"></i>Zarządzaj mieszkaniami</a></li>
                         <li class="navigation__section__item">
                             <a href="tentantNotify.html" class="navigation__section__link">
@@ -116,6 +116,332 @@
     
             <div class="wrapper__right__bottom">
                 <main class="container">
+
+                    <div class="site">
+                        <p class="site__title">Zarządzanie mieszkaniami</p>
+                        <div class="site__line"></div>
+                    </div>
+
+                    <div class="search__container">
+                        <div class="search">
+                            <label for="searchBar" class="search__label">Wyszukaj mieszkanie: </label>
+                            <input type="text" name="searchBar" id="searchBar" class="search__bar" placeholder="Śwircza dworna"> 
+                        </div>
+                        <div class="search">
+                            <label for="searchBar" class="search__label">Najemca: </label>
+                            <input type="text" name="searchBar" id="searchBar" class="search__bar" placeholder="Kowalski Mariusz"> 
+                        </div>
+                    </div>
+
+                    <table class="tentant">
+                        <thead class="tentant__head">
+                            <tr class="tentant__head__tr">
+                                <th class="tentant__head__th">ID</th>
+                                <th class="tentant__head__th">Nazwa mieszkania</th>
+                                <th class="tentant__head__th">Miasto</th>
+                                <th class="tentant__head__th">Ulica & Adress</th>
+                                <th class="tentant__head__th">Cena</th>
+                                <th class="tentant__head__th">Metrarz</th>
+                                <th class="tentant__head__th">Czynsz</th>
+                                <th class="tentant__head__th">Najemca</th>
+                                <th class="tentant__head__th">Poczontek najmu</th>
+                                <th class="tentant__head__th">Koniec najmu</th>
+                                <th class="tentant__head__th">Akcja</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tentant__body">
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Wilka wilczanka</td>
+                                <td class="tentant__body__td">Rzeszów</td>
+                                <td class="tentant__body__td">Ul. Miłosza Walczaka 4</td>
+                                <td class="tentant__body__td">482 000 PLN</td>
+                                <td class="tentant__body__td">98 m²</td>
+                                <td class="tentant__body__td">2 942 PLN</td>
+                                <td class="tentant__body__td">Kamil Gergont</td>
+                                <td class="tentant__body__td">14.04.2020</td>
+                                <td class="tentant__body__td">14.04.2021</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
                 </main>
 
             </div>

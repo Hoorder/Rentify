@@ -37,7 +37,7 @@
         
                     <ul class="navigation__section__list">
                         <li class="navigation__section__item">
-                            <a href="index.html" class="navigation__section__link navigation__section__link--active">
+                            <a href="index.html" class="navigation__section__link">
                             <i class="fa-solid fa-house navigation__section__icon" aria-hidden="true"></i>Strona główna</a></li>
                     </ul>
                 </div>
@@ -66,10 +66,10 @@
                             <a href="manageTentant.html" class="navigation__section__link">
                             <i class="fa-solid fa-people-roof navigation__section__icon" aria-hidden="true"></i>Zarządzaj najemcami</a></li>
                         <li class="navigation__section__item">
-                            <a href="manageTentant.html" class="navigation__section__link">
+                            <a href="manageApartament.html" class="navigation__section__link">
                             <i class="fa-solid fa-list-check navigation__section__icon" aria-hidden="true"></i>Zarządzaj mieszkaniami</a></li>
                         <li class="navigation__section__item">
-                            <a href="tentantNotify.html" class="navigation__section__link">
+                            <a href="tentantNotify.html" class="navigation__section__link navigation__section__link--active">
                             <i class="fa-solid fa-house-circle-exclamation navigation__section__icon" aria-hidden="true"></i>Powiadom najemców</a></li>
                     </ul>
                 </div>
@@ -116,6 +116,88 @@
     
             <div class="wrapper__right__bottom">
                 <main class="container">
+                    <div class="site">
+                        <p class="site__title">Powiadomienia dla najemców</p>
+                        <div class="site__line"></div>
+                    </div>
+
+                    <div class="notify__wrapper">
+                        <form class="form form__left" action="#">
+    
+                            <div class="form__section">
+                                <p class="form__section__title">Informacje wstępne</p>
+                                <div class="form__section__line"></div>
+                            </div>
+    
+                            <div class="form__container form__container--notify">
+                                <div class="form__item">
+                                    <label for="toWho" class="form__item__label">Do kogo: (ulica)</label>
+                                    <input type="text" name="toWho" id="toWho" class="form__item__input">
+                                </div>
+                                <div class="form__item">
+                                    <label for="toWhoNr" class="form__item__label">Do kogo: (numer mieszkania)</label>
+                                    <input type="text" name="toWhoNr" id="toWhoNr" class="form__item__input">
+                                </div>
+                                <div class="form__item">
+                                    <label for="showingNotifyFrom" class="form__item__label">Wyświetlenie powiadomienia od:</label>
+                                    <input type="date" name="showingNotifyFrom" id="showingNotifyFrom" class="form__item__input">
+                                </div>
+                                <div class="form__item">
+                                    <label for="showingNotifyTo" class="form__item__label">Do</label>
+                                    <input type="date" name="showingNotifyTo" id="showingNotifyTo" class="form__item__input">
+                                </div>
+                                <div class="form__item">
+                                    <label for="notifyDescription" class="form__item__label">Treść wiadomości</label>
+                                    <textarea id="message" name="message" rows="5" cols="33" required class="form__item__input"></textarea>
+                                </div>
+                            </div>
+    
+                            <div class="form__container">
+                                <button class="button button--primary button--space">Wyślij ogłoszenie</button>
+                                <div class="information">
+                                    <i class="fa-solid fa-circle-info information__icon" aria-hidden="true"></i>
+                                    <p class="information__decription">Powiadomienie będzie <br> widoczne u najemców</p>
+                                </div>
+                            </div>
+                        </form>
+    
+                        <div class="notify__container">
+                            <div class="form__section form__section--flex">
+                                <p class="form__section__title">Informacje wstępne</p>
+                                <div class="form__section__line"></div>
+                            </div>
+    
+                            <table class="tentant">
+                                <thead class="tentant__head">
+                                    <tr class="tentant__head__tr">
+                                        <th class="tentant__head__th">ID</th>
+                                        <th class="tentant__head__th">Treść</th>
+                                        <th class="tentant__head__th">Ulica</th>
+                                        <th class="tentant__head__th">Mieszkanie</th>
+                                        <th class="tentant__head__th">Okres od:</th>
+                                        <th class="tentant__head__th">Do:</th>
+                                        <th class="tentant__head__th">Akcja</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tentant__body">
+                                    <tr class="tentant__body__tr">
+                                        <td class="tentant__body__td">1</td>
+                                        <td class="tentant__body__td">Loremui...</td>
+                                        <td class="tentant__body__td">Ul. Urocza 4G</td>
+                                        <td class="tentant__body__td">44</td>
+                                        <td class="tentant__body__td">14.04.2020</td>
+                                        <td class="tentant__body__td">14.04.2021</td>
+                                        <td class="tentant__body__td">
+                                            <button class="button button--edit">Edytuj</button>
+                                            <button class="button button--delete">Usuń</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+    
+                        </div>
+                    </div>
+
                 </main>
 
             </div>

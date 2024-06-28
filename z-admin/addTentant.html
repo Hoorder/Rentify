@@ -37,7 +37,7 @@
         
                     <ul class="navigation__section__list">
                         <li class="navigation__section__item">
-                            <a href="index.html" class="navigation__section__link navigation__section__link--active">
+                            <a href="index.html" class="navigation__section__link">
                             <i class="fa-solid fa-house navigation__section__icon" aria-hidden="true"></i>Strona główna</a></li>
                     </ul>
                 </div>
@@ -47,7 +47,7 @@
         
                     <ul class="navigation__section__list">
                         <li class="navigation__section__item">
-                            <a href="addTentant.html" class="navigation__section__link">
+                            <a href="addTentant.html" class="navigation__section__link navigation__section__link--active">
                             <i class="fa-solid fa-user-plus navigation__section__icon" aria-hidden="true"></i>Dodaj najemce</a></li>
                         <li class="navigation__section__item">
                             <a href="addApartament.html" class="navigation__section__link">
@@ -116,6 +116,80 @@
     
             <div class="wrapper__right__bottom">
                 <main class="container">
+
+                    <div class="site">
+                        <p class="site__title">Dodawanie najemcy i tworzenie konta</p>
+                        <div class="site__line"></div>
+                    </div>
+
+                    <form class="form" action="#">
+
+                        <div class="form__section">
+                            <p class="form__section__title">Informacje wstępne</p>
+                            <div class="form__section__line"></div>
+                        </div>
+
+                        <div class="form__container">
+                            <div class="form__item">
+                                <label for="userName" class="form__item__label">Imie / Imiona</label>
+                                <input type="text" name="userName" id="userName" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="userSurname" class="form__item__label">Nazwisko</label>
+                                <input type="text" name="userSurname" id="userSurname" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="userPESEL" class="form__item__label">PESEL</label>
+                                <input type="text" name="userPESEL" id="userPESEL" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="userPhoneNumber" class="form__item__label">Numer telefonu</label>
+                                <input type="text" name="userPhoneNumber" id="userPhoneNumber" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="userEmail" class="form__item__label">Adres e-mail</label>
+                                <input type="text" name="userEmail" id="userEmail" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="userPassword" class="form__item__label">Hasło do konta</label>
+                                <input type="password" name="userPassword" id="userPassword" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="userAccountStatus" class="form__item__label">Status konta</label>
+                                <input type="text" name="userAccountStatus" id="userAccountStatus" class="form__item__input">
+                            </div>
+                            <div class="information">
+                                <i class="fa-solid fa-circle-info information__icon" aria-hidden="true"></i>
+                                <p class="information__decription">Login do konta to adres e -mail<br> a hasło to numer telefonu</p>
+                            </div>
+                        </div>
+
+                        <div class="form__section">
+                            <p class="form__section__title">Dane umowne</p>
+                            <div class="form__section__line"></div>
+                        </div>
+
+                        <div class="form__container">
+                            <div class="form__item">
+                                <label for="apartament" class="form__item__label">Wybierz mieszkanie</label>
+                                <input type="text" name="apartament" id="apartament" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="rentStart" class="form__item__label">Start najmu</label>
+                                <input type="date" name="rentStart" id="rentStart" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="rentEnd" class="form__item__label">Koniec najmu</label>
+                                <input type="date" name="rentEnd" id="rentEnd" class="form__item__input">
+                            </div>
+                            <div class="information">
+                                <i class="fa-solid fa-circle-info information__icon" aria-hidden="true"></i>
+                                <p class="information__decription">Mieszkanie i dane można <br> dodać/edytować później</p>
+                            </div>
+                        </div>
+
+                        <button class="button button--primary">Dodaj najemce</button>
+                    </form>
                 </main>
 
             </div>

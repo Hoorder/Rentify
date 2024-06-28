@@ -37,7 +37,7 @@
         
                     <ul class="navigation__section__list">
                         <li class="navigation__section__item">
-                            <a href="index.html" class="navigation__section__link navigation__section__link--active">
+                            <a href="index.html" class="navigation__section__link">
                             <i class="fa-solid fa-house navigation__section__icon" aria-hidden="true"></i>Strona główna</a></li>
                     </ul>
                 </div>
@@ -50,7 +50,7 @@
                             <a href="addTentant.html" class="navigation__section__link">
                             <i class="fa-solid fa-user-plus navigation__section__icon" aria-hidden="true"></i>Dodaj najemce</a></li>
                         <li class="navigation__section__item">
-                            <a href="addApartament.html" class="navigation__section__link">
+                            <a href="addApartament.html" class="navigation__section__link  navigation__section__link--active">
                             <i class="fa-solid fa-hotel navigation__section__icon" aria-hidden="true"></i>Dodaj mieszkanie</a></li>
                         <li class="navigation__section__item">
                             <a href="addHousingAssoc.html" class="navigation__section__link">
@@ -116,6 +116,113 @@
     
             <div class="wrapper__right__bottom">
                 <main class="container">
+
+                    <div class="site">
+                        <p class="site__title">Dodawanie i przypisywanie mieszkania</p>
+                        <div class="site__line"></div>
+                    </div>
+
+                    <form class="form" action="#">
+
+                        <div class="form__section">
+                            <p class="form__section__title">Informacje wstępne</p>
+                            <div class="form__section__line"></div>
+                        </div>
+
+                        <div class="form__container form__container--three">
+                            <div class="form__item">
+                                <label for="apratName" class="form__item__label">Nazwa mieszkania</label>
+                                <input type="text" name="apratName" id="apratName" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="country" class="form__item__label">Państwo</label>
+                                <input type="text" name="country" id="country" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="city" class="form__item__label">Miasto</label>
+                                <input type="text" name="city" id="city" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="zipCode" class="form__item__label">Kod pocztowy</label>
+                                <input type="text" name="zipCode" id="zipCode" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="stret" class="form__item__label">Ulica</label>
+                                <input type="text" name="stret" id="stret" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="apartNr" class="form__item__label">Numer mieszkania</label>
+                                <input type="password" name="apartNr" id="apartNr" class="form__item__input">
+                            </div>
+                        </div>
+
+                        <div class="form__section">
+                            <p class="form__section__title">Szczegóły mieszkania</p>
+                            <div class="form__section__line"></div>
+                        </div>
+
+                        <div class="form__container">
+                            <div class="form__item">
+                                <label for="price" class="form__item__label">Cena</label>
+                                <input type="text" name="price" id="price" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="area" class="form__item__label">Powierzchnia</label>
+                                <input type="area" name="rentStart" id="area" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="rent" class="form__item__label">Czynsz</label>
+                                <input type="text" name="rent" id="rent" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="rent" class="form__item__label">Wybierz wspólnote</label>
+                                <input type="text" name="rent" id="rent" class="form__item__input">
+                            </div>
+                        </div>
+
+                        <div class="form__section">
+                            <p class="form__section__title">Pozosta informacje</p>
+                            <div class="form__section__line"></div>
+                        </div>
+
+                        <div class="form__container">
+                            <div class="form__item">
+                                <label for="aparatamentLook" class="form__item__label">Stan mieszkania</label>
+                                <input type="text" name="aparatamentLook" id="aparatamentLook" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="comentary" class="form__item__label">Komentarz</label>
+                                <input type="text" name="comentary" id="comentary" class="form__item__input">
+                            </div>
+                            <div class="form__item">
+                                <label for="photo" class="form__item__label">Zdjęcie</label>
+                                <input type="file" name="photo" id="photo" class="form__item__input">
+                            </div>
+                            <div class="information">
+                                <i class="fa-solid fa-circle-info information__icon" aria-hidden="true"></i>
+                                <p class="information__decription">Zdjęcia mieszkania będą <br> widoczne w panelu najemcy</p>
+                            </div>
+                        </div>
+                        
+                        <div class="form__section">
+                            <p class="form__section__title">Najemca</p>
+                            <div class="form__section__line"></div>
+                        </div>
+
+                        <div class="form__container">
+                            <div class="form__item">
+                                <label for="choseTent" class="form__item__label">Wybierz najemce</label>
+                                <input type="text" name="choseTent" id="choseTent" class="form__item__input">
+                            </div>
+                            <div class="information">
+                                <i class="fa-solid fa-circle-info information__icon" aria-hidden="true"></i>
+                                <p class="information__decription">Najemce można dodać <br> do mieszkania później</p>
+                            </div>
+                        </div>
+
+                        <button class="button button--primary">Dodaj mieszkanie</button>
+
+                    </form>
                 </main>
 
             </div>

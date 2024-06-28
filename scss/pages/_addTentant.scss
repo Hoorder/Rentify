@@ -1,0 +1,103 @@
+@import '../utils/variables';
+
+.site {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    &__line {
+        width: 250px;
+        border-bottom: 1px solid $secondary-color;
+    }
+}
+
+.form {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 20px;
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        &__title {
+            color: $gray;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            font-weight: 300;
+        }
+
+        &__line {
+            width: 65%;
+            max-width: 980px;
+            border-bottom: 1px solid $gray;
+            padding-bottom: 5px;
+        }
+    }
+
+    &__container {
+        max-width: 1020px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        margin-bottom: 15px;
+
+        &__label {
+            padding-bottom: 5px;
+        }
+
+        &__input {
+            width: 230px;
+            height: 37px;
+            color: $white;
+            background-color: inherit;
+            border: 1px solid #3E4145;
+            border-radius: 4px;
+            padding-left: 15px;
+
+            &::-webkit-calendar-picker-indicator {
+                filter: invert(50%); /* przykładowa zmiana koloru */
+                padding-right: 15px;
+            }
+        }
+        
+        textarea {
+            height: inherit;
+            max-width: 480px;
+            width: 500px;
+        }
+    }
+
+    .information {
+        display: flex;
+        align-items: center;
+        background-color: #29465B;
+        padding: 5px;
+        width: 230px;
+        height: 54px;
+        margin-top: 12px;
+
+        &__icon {
+            padding: 0 10px;
+            font-size: 24px;
+        }
+
+        &__decription {
+            line-height: 16px;
+        }
+    }
+}

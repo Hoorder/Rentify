@@ -37,7 +37,7 @@
         
                     <ul class="navigation__section__list">
                         <li class="navigation__section__item">
-                            <a href="index.html" class="navigation__section__link navigation__section__link--active">
+                            <a href="index.html" class="navigation__section__link">
                             <i class="fa-solid fa-house navigation__section__icon" aria-hidden="true"></i>Strona główna</a></li>
                     </ul>
                 </div>
@@ -63,7 +63,7 @@
         
                     <ul class="navigation__section__list">
                         <li class="navigation__section__item">
-                            <a href="manageTentant.html" class="navigation__section__link">
+                            <a href="manageTentant.html" class="navigation__section__link navigation__section__link--active">
                             <i class="fa-solid fa-people-roof navigation__section__icon" aria-hidden="true"></i>Zarządzaj najemcami</a></li>
                         <li class="navigation__section__item">
                             <a href="manageTentant.html" class="navigation__section__link">
@@ -116,6 +116,344 @@
     
             <div class="wrapper__right__bottom">
                 <main class="container">
+
+                    <div class="site">
+                        <p class="site__title">Zarządzanie najemcami</p>
+                        <div class="site__line"></div>
+                    </div>
+
+                    <div class="search">
+                        <label for="searchBar" class="search__label">Wyszukaj najemce: </label>
+                        <input type="text" name="searchBar" id="searchBar" class="search__bar" placeholder="Kowalski Mariusz"> 
+                    </div>
+
+                    <table class="tentant">
+                        <thead class="tentant__head">
+                            <tr class="tentant__head__tr">
+                                <th class="tentant__head__th">ID</th>
+                                <th class="tentant__head__th">Imie</th>
+                                <th class="tentant__head__th">Nazwisko</th>
+                                <th class="tentant__head__th">PESEL</th>
+                                <th class="tentant__head__th">Numer Telefonu</th>
+                                <th class="tentant__head__th">Adres e-mail</th>
+                                <th class="tentant__head__th">Status konta</th>
+                                <th class="tentant__head__th">Umowa wygasa</th>
+                                <th class="tentant__head__th">Akcja</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tentant__body">
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+                            <tr class="tentant__body__tr">
+                                <td class="tentant__body__td">1</td>
+                                <td class="tentant__body__td">Kamil</td>
+                                <td class="tentant__body__td">Czenczek</td>
+                                <td class="tentant__body__td">014928585854</td>
+                                <td class="tentant__body__td">+48 781 492 004</td>
+                                <td class="tentant__body__td">kamil.czenczek@o2.pl</td>
+                                <td class="tentant__body__td">Aktywne</td>
+                                <td class="tentant__body__td">14.09.2024</td>
+                                <td class="tentant__body__td">
+                                    <button class="button button--edit">Edytuj</button>
+                                    <button class="button button--delete">Usuń</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
                 </main>
 
             </div>
