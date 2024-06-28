@@ -1,0 +1,30 @@
+@import '../utils/variables';
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    
+    &__right {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+}
+
+.wrapper__right__bottom {
+    flex: 1;
+    overflow-y: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 20px;
+    // align-items: center;
+}
+
+.aboutRights {
+    color: $gray;
+    text-align: center;
+    margin: 20px;
+    font-weight: 100;
+}

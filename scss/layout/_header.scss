@@ -1,0 +1,21 @@
+@import '../utils/variables';
+
+.header {
+    flex: 0 0 53px;
+    border-bottom: $gray;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-bottom: 1px solid $gray;
+
+    .profile {
+        display: flex;
+        margin-right: 60px;
+        gap: 10px;
+        align-items: center;
+
+        &__icon {
+            font-size: 20px;
+        }
+    }
+}

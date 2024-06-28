@@ -1,0 +1,25 @@
+@import '../utils/variables';
+
+.container {
+    max-width: 1550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // background-color: gray;
+    overflow: auto;
+
+    .dataCard {
+        width: 500px;
+        background-color: #393939;
+        margin: 8px;
+
+        // &:nth-child(4) {
+        //     width: 1016px;
+        // }
+
+        &__name {
+            font-size: 20px;
+        }
+
+    }
+}
