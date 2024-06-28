@@ -5,21 +5,129 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    // background-color: gray;
-    overflow: auto;
+    // overflow: auto;
 
     .dataCard {
         width: 500px;
         background-color: #393939;
         margin: 8px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
 
-        // &:nth-child(4) {
-        //     width: 1016px;
-        // }
-
-        &__name {
-            font-size: 20px;
+        &:nth-child(4) {
+          width: 1000px;
         }
 
+        &__table {
+            width: 100%;
+            border-collapse: collapse;
+            
+            &__name {
+                font-size: 20px;
+                padding: 10px 0;
+            }
+
+            &__row {
+              background-color: #ffffff1f;
+            
+              &--waring {
+                background-color: #AB7E3A;
+              }
+
+              &--critical {
+                background-color: #D79533 !important;
+              }
+
+              &:nth-child(2n) {
+                background-color: #393939;
+              }
+
+                &--statisctics {
+                    &:nth-child(2n) {
+                        td:nth-child(odd) {
+                          background-color: #393939;
+                          color: $white;
+                        }
+                    
+                        td:nth-child(even) {
+                          background-color:$white;
+                          color: black;
+                        }
+                      }
+                }
+            }
+
+            &__data {
+                font-size: 16px;
+                padding: 5px;
+                font-weight: 300;
+                border-right: 1px solid $white;
+                padding-left: 20px;
+
+                &:last-child {
+                  border-right: none;
+                }
+
+                &--statistics {
+                    font-size: 16px;
+                    padding: 5px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+    
+                    &:nth-child(odd) {
+                        background-color: $white;
+                        color: #393939;
+                      }
+                  
+                      &:nth-child(even) {
+                        background-color: #393939;
+                        color: $white;
+                      }
+                }
+
+                .statistics {
+                  display: flex;
+
+                  &__collumar {
+                    width: 200px;
+                    background-color: $white;
+                    height: 20px;
+                  }
+
+                  &__price {
+                    padding-left: 10px;
+                  }
+                }
+            }
+        }
+
+        &--reset {
+          padding-bottom: 0px;
+        }
+        
+        .statisticsCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          width: 400px;
+
+          &__info {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            font-family: 'Inter', sans-serif;
+  
+            &__description {
+              font-size: 20px;
+            }
+  
+            &__money {
+              font-size: 35px;
+              font-weight: 500;
+            }
+          }
+        }
     }
 }
