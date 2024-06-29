@@ -37,7 +37,7 @@
         
                     <ul class="navigation__section__list">
                         <li class="navigation__section__item">
-                            <a href="index.html" class="navigation__section__link navigation__section__link--active">
+                            <a href="index.html" class="navigation__section__link">
                             <i class="fa-solid fa-house navigation__section__icon" aria-hidden="true"></i>Strona główna</a></li>
                     </ul>
                 </div>
@@ -92,7 +92,7 @@
         
                     <ul class="navigation__section__list">
                         <li class="navigation__section__item">
-                            <a href="settings.html" class="navigation__section__link">
+                            <a href="settings.html" class="navigation__section__link navigation__section__link--active">
                             <i class="fa-solid fa-sliders navigation__section__icon" aria-hidden="true"></i>Ustawienia</a></li>
                     </ul>
                 </div>
@@ -116,6 +116,132 @@
     
             <div class="wrapper__right__bottom">
                 <main class="container">
+
+                    <div class="site">
+                        <p class="site__title">Ustawienia</p>
+                        <div class="site__line"></div>
+                    </div>
+
+                    <div class="settings">
+                        <form class="settings__form" action="#">
+
+                            <div class="form__section">
+                                <p class="form__section__title">Informacje o koncie</p>
+                                <div class="form__section__line form__section__line--width"></div>
+                            </div>
+    
+                            <div class="form__container">
+                                <div class="form__item">
+                                    <label for="settingsName" class="form__item__label">Imie / Imiona</label>
+                                    <input type="text" name="settingsName" id="settingsName" class="form__item__input" value="Kamil Jan">
+                                </div>
+                                <div class="form__item">
+                                    <label for="settingsSurname" class="form__item__label">Nazwisko</label>
+                                    <input type="area" name="settingsSurname" id="settingsSurname" class="form__item__input" value="Czenczek">
+                                </div>
+                                <div class="form__item">
+                                    <label for="settingsPESEL" class="form__item__label">PESEL</label>
+                                    <input type="text" name="settingsPESEL" id="settingsPESEL" class="form__item__input" value="01250492841">
+                                </div>
+                                <div class="form__item">
+                                    <label for="settingsPhoneNumber" class="form__item__label">Numer telefonu</label>
+                                    <input type="text" name="settingsPhoneNumber" id="settingsPhoneNumber" class="form__item__input" value="+48 729 042 882">
+                                </div>
+                            </div>
+    
+                            <button class="button button--primary button--space">Zatwierdź zmiany</button>
+                        </form>
+
+                        <div class="settings__form">
+
+                            <div class="form__section">
+                                <p class="form__section__title">Dane logowania</p>
+                                <div class="form__section__line form__section__line--width"></div>
+                            </div>
+                            
+                            <div class="form__container">
+                                <div class="form__item">
+                                    <label for="settingsEmail" class="form__item__label">Adres e-mail</label>
+                                    <input type="text" name="settingsEmail" id="settingsEmail" class="form__item__input" value="kamil.czenczek@o2.pl">
+                                </div>
+                                <div class="form__item">
+                                    <label for="settingsPassword" class="form__item__label">Hasło</label>
+                                    <input type="password" name="settingsPassword" id="settingsPassword" class="form__item__input" disabled value="tutajhasło">
+                                </div>
+                                
+                                <div class="form__item form__item--pswdchange">
+                                    <label for="passwordChange" class="form__item__label form__item__label--pswd">Zmień hasło</label>
+                                    <input type="checkbox" name="passwordChange" id="passwordChange" class="form__item__label__checkbox">
+                                </div>
+
+                                <form class="settings__forms" action="#">
+                                    <div class="form__item ">
+                                        <label for="settingsNewPassword" class="form__item__label">Nowe hasło</label>
+                                        <input type="password" name="settingsNewPassword" id="settingsNewPassword" class="form__item__input">
+                                    </div>
+                                    <div class="form__item ">
+                                        <label for="settingsRepeatNewPassword" class="form__item__label">Powtórz nowe hasło</label>
+                                        <input type="password" name="settingsRepeatNewPassword" id="settingsRepeatNewPassword" class="form__item__input">
+                                        <button class="button button--primary button--space">Zatwierdź zmiany</button>
+                                    </div>
+                                </form>
+                                
+                            </div>
+                        </div>
+                            
+                        <form class="settings__form" action="#">
+
+                            <div class="form__section">
+                                <p class="form__section__title">Dane do przelewu</p>
+                                <div class="form__section__line form__section__line--width"></div>
+                            </div>
+    
+                            <div class="form__container">
+                                <div class="form__item">
+                                    <label for="transferRecipient" class="form__item__label">Odbiorca</label>
+                                    <input type="text" name="transferRecipient" id="transferRecipient" class="form__item__input" value="P.H.U. Arkadiusz Winiarski">
+                                </div>
+                                <div class="form__item">
+                                    <label for="adressRecipient" class="form__item__label">Adres</label>
+                                    <input type="area" name="adressRecipient" id="adressRecipient" class="form__item__input" value="Przekontna 9 3/4">
+                                </div>
+                                <div class="form__item">
+                                    <label for="accountAdresRecipient" class="form__item__label">Numer konta</label>
+                                    <input type="text" name="accountAdresRecipient" id="accountAdresRecipient" class="form__item__input form__item__input--accountAdress" value="48 2940 0243 8475 0000 9523 1358">
+                                </div>
+                            </div>
+    
+                            <button class="button button--primary button--space">Zatwierdź zmiany</button>
+                        </form>
+                        <form class="settings__form" action="#">
+
+                            <div class="form__section">
+                                <p class="form__section__title">Wygląd i język</p>
+                                <div class="form__section__line form__section__line--width"></div>
+                            </div>
+    
+                            <div class="form__container">
+                                <div class="form__item">
+                                    <label for="theme" class="form__item__label">Wybierz motyw: </label>
+                                    <select name="theme" id="theme" class="form__item__input">
+                                        <option value="dark">Domyślny (Ciemny)</option>
+                                        <option value="light">Jasny</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form__item">
+                                    <label for="language" class="form__item__label">Wybierz język: </label>
+                                    <select name="language" id="language" class="form__item__input">
+                                        <option value="pl">Domyślny (Polski)</option>
+                                        <option value="ang">Angielski</option>
+                                    </select>
+                                </div>
+                            </div>
+    
+                            <button class="button button--primary button--space">Zatwierdź zmiany</button>
+                        </form>
+                    </div>
+
                 </main>
 
             </div>

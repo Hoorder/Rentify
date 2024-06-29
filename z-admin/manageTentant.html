@@ -19,6 +19,85 @@
 </head>
 
 <body>
+
+    <div class="edit__container">
+        <div class="edit__card">
+            <i class="fa-regular fa-circle-xmark exit" id="exitBtn"></i>
+            <div class="site site__edit">
+                <p class="site__title">Edytuj konta najemcy</p>
+                <div class="site__line"></div>
+            </div>
+            <form class="form form--edit" action="#">
+
+                <div class="form__section">
+                    <p class="form__section__title">Informacje wstępne</p>
+                    <div class="form__section__line"></div>
+                </div>
+
+                <div class="form__container">
+                    <div class="form__item">
+                        <label for="EDITuserName" class="form__item__label">Imie / Imiona</label>
+                        <input type="text" name="EDITuserName" id="EDITuserName" class="form__item__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="EDITuserSurname" class="form__item__label">Nazwisko</label>
+                        <input type="text" name="EDITuserSurname" id="EDITuserSurname" class="form__item__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="EDITuserPESEL" class="form__item__label">PESEL</label>
+                        <input type="text" name="EDITuserPESEL" id="EDITuserPESEL" class="form__item__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="EDITuserPhoneNumber" class="form__item__label">Numer telefonu</label>
+                        <input type="text" name="EDITuserPhoneNumber" id="EDITuserPhoneNumber" class="form__item__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="EDITuserEmail" class="form__item__label">Adres e-mail</label>
+                        <input type="text" name="EDITuserEmail" id="EDITuserEmail" class="form__item__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="EDITuserPassword" class="form__item__label">Hasło do konta</label>
+                        <input type="password" name="EDITuserPassword" id="EDITuserPassword" class="form__item__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="EDITuserAccountStatus" class="form__item__label">Status konta</label>
+                        <input type="text" name="EDITuserAccountStatus" id="EDITuserAccountStatus" class="form__item__input">
+                    </div>
+                    <div class="information">
+                        <i class="fa-solid fa-circle-info information__icon" aria-hidden="true"></i>
+                        <p class="information__decription">Login do konta to adres e -mail<br> a hasło to numer telefonu</p>
+                    </div>
+                </div>
+
+                <div class="form__section">
+                    <p class="form__section__title">Dane umowne</p>
+                    <div class="form__section__line"></div>
+                </div>
+
+                <div class="form__container">
+                    <div class="form__item">
+                        <label for="apartament" class="form__item__label">Wybierz mieszkanie</label>
+                        <input type="text" name="apartament" id="apartament" class="form__item__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="rentStart" class="form__item__label">Start najmu</label>
+                        <input type="date" name="rentStart" id="rentStart" class="form__item__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="rentEnd" class="form__item__label">Koniec najmu</label>
+                        <input type="date" name="rentEnd" id="rentEnd" class="form__item__input">
+                    </div>
+                    <div class="information">
+                        <i class="fa-solid fa-circle-info information__icon" aria-hidden="true"></i>
+                        <p class="information__decription">Mieszkanie i dane można <br> dodać/edytować później</p>
+                    </div>
+                </div>
+
+                <button class="button button--primary">Dodaj najemce</button>
+            </form>
+        </div>
+    </div>
+
     <div class="wrapper">
 
         <nav class="navigation">
@@ -66,7 +145,7 @@
                             <a href="manageTentant.html" class="navigation__section__link navigation__section__link--active">
                             <i class="fa-solid fa-people-roof navigation__section__icon" aria-hidden="true"></i>Zarządzaj najemcami</a></li>
                         <li class="navigation__section__item">
-                            <a href="manageTentant.html" class="navigation__section__link">
+                            <a href="manageApartament.html" class="navigation__section__link">
                             <i class="fa-solid fa-list-check navigation__section__icon" aria-hidden="true"></i>Zarządzaj mieszkaniami</a></li>
                         <li class="navigation__section__item">
                             <a href="tentantNotify.html" class="navigation__section__link">

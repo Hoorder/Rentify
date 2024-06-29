@@ -19,6 +19,57 @@
 </head>
 
 <body>
+
+    <div class="edit__container">
+        <div class="edit__card edit__card--notify">
+            <i class="fa-regular fa-circle-xmark exit" id="exitBtn"></i>
+            <div class="site site__edit">
+                <p class="site__title">Edytuj dane mieszkania</p>
+                <div class="site__line"></div>
+            </div>
+
+            <form class="form form__left" action="#">
+    
+                <div class="form__section">
+                    <p class="form__section__title">Informacje wstępne</p>
+                    <div class="form__section__line"></div>
+                </div>
+
+                <div class="form__container form__container--notify">
+                    <div class="form__item">
+                        <label for="toWho" class="form__item__label">Do kogo: (ulica)</label>
+                        <input type="text" name="toWho" id="toWho" class="form__item__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="toWhoNr" class="form__item__label">Do kogo: (numer mieszkania)</label>
+                        <input type="text" name="toWhoNr" id="toWhoNr" class="form__item__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="showingNotifyFrom" class="form__item__label">Wyświetlenie powiadomienia od:</label>
+                        <input type="date" name="showingNotifyFrom" id="showingNotifyFrom" class="form__item__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="showingNotifyTo" class="form__item__label">Do</label>
+                        <input type="date" name="showingNotifyTo" id="showingNotifyTo" class="form__item__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="notifyDescription" class="form__item__label">Treść wiadomości</label>
+                        <textarea id="message" name="message" rows="5" cols="33" required class="form__item__input"></textarea>
+                    </div>
+                </div>
+
+                <div class="form__container">
+                    <button class="button button--primary button--space">Wyślij ogłoszenie</button>
+                    <div class="information">
+                        <i class="fa-solid fa-circle-info information__icon" aria-hidden="true"></i>
+                        <p class="information__decription">Powiadomienie będzie <br> widoczne u najemców</p>
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
     <div class="wrapper">
 
         <nav class="navigation">

@@ -1,0 +1,53 @@
+@import '../utils/variables';
+
+.settings {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    &__form {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 40px;
+        max-width: 230px;
+
+        &:nth-child(1) {
+            margin-left: 20px;
+        }
+
+        .form__container {
+            justify-content: left;
+
+            .form__item--hiden {
+                display: none;
+            }
+
+            .form__item--pswdchange {
+                flex-direction: row;
+            }
+            
+            .form__item__label--pswd {
+                padding-bottom: 0px;
+                padding: 0px 10px;
+            }
+    
+            .form__item__label__checkbox {
+                width: 20px;
+            }
+    
+            .form__item__input--accountAdress {
+                width: 240px;
+            }
+            
+            option {
+                color: black;
+            }
+        }
+        .form__section__line--width {
+            width: 90%;
+        }
+    }
+    
+}

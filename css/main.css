@@ -421,6 +421,44 @@ body {
   margin-left: 10px;
 }
 
+.edit__container {
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit__container .edit__card {
+  max-width: 1050px;
+  background-color: #262626;
+  border: 2px solid #F1F1F1;
+  margin: 0 50px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.edit__container .edit__card .site__edit {
+  align-items: center;
+}
+.edit__container .edit__card--notify {
+  max-width: 600px;
+}
+.edit__container .exit {
+  display: block;
+  position: absolute;
+  font-size: 35px;
+  right: 20px;
+}
+.edit__container .form--edit {
+  margin-top: 20px;
+}
+
 .search {
   display: flex;
   align-items: center;
@@ -468,6 +506,7 @@ body {
 
 .notify__wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 .notify__wrapper .form__left {
   width: 500px;
@@ -479,4 +518,46 @@ body {
   width: 600px;
   margin-top: 30px;
   margin-left: 20px;
+}
+
+.settings {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.settings__form {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  max-width: 230px;
+}
+.settings__form:nth-child(1) {
+  margin-left: 20px;
+}
+.settings__form .form__container {
+  justify-content: left;
+}
+.settings__form .form__container .form__item--hiden {
+  display: none;
+}
+.settings__form .form__container .form__item--pswdchange {
+  flex-direction: row;
+}
+.settings__form .form__container .form__item__label--pswd {
+  padding-bottom: 0px;
+  padding: 0px 10px;
+}
+.settings__form .form__container .form__item__label__checkbox {
+  width: 20px;
+}
+.settings__form .form__container .form__item__input--accountAdress {
+  width: 240px;
+}
+.settings__form .form__container option {
+  color: black;
+}
+.settings__form .form__section__line--width {
+  width: 90%;
 }/*# sourceMappingURL=main.css.map */
