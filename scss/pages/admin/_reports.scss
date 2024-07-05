@@ -1,8 +1,8 @@
-
-.search__container {
+@import '../../utils/variables';
+.search__container__checkbox {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     
     .searchBar--reports {
         padding-left: 5px;

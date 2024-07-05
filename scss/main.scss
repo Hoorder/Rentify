@@ -4,20 +4,28 @@
 
 @import 'components/buttons';
 @import 'components/modals';
+@import 'components/form';
 
 @import 'layout/grid';
 @import 'layout/header';
 @import 'layout/navigation';
 
 @import 'pages/login';
-@import 'pages/indexAdmin';
-@import 'pages/addTentant.scss';
-@import 'pages/addApartament';
-@import 'pages/addHousingAssoc';
-@import 'pages/manageTentant';
-@import 'pages/tentantNotify';
-@import 'pages/reports';
-@import 'pages/archives';
+
+@import 'pages/admin/index';
+@import 'pages/admin/addTentant.scss';
+@import 'pages/admin/addApartament';
+@import 'pages/admin/addHousingAssoc';
+@import 'pages/admin/manageTentant';
+@import 'pages/admin/tentantNotify';
+@import 'pages/admin/reports';
+@import 'pages/admin/archives';
+
+@import 'pages/user/index';
+@import 'pages/user/paymentHistory';
+@import 'pages/user/rentPaying';
+@import 'pages/user/reportingFalus';
+
 @import 'pages/settings';
 
 @import 'themes/dark';

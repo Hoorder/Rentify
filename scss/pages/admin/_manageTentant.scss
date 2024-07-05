@@ -1,4 +1,4 @@
-@import '../utils/variables';
+@import '../../utils/variables';
 
 .edit__container {
     visibility: hidden;
@@ -69,39 +69,5 @@
         border: 1px solid #3E4145;
         border-radius: 4px;
         padding-left: 15px;
-    }
-}
-
-.tentant {   
-    border-collapse: collapse;
-    margin-top: 10px;
-    width: 100%;
-    
-    &__head {
-        background-color: $secondary-color;
-        
-        &__th {
-            font-weight: 400;
-            padding: 10px;
-            text-align: left;
-        }
-    }
-
-    &__body {
-        
-        &__tr {
-            border-bottom: 2px solid $primary-color;
-            &:nth-child(odd) {
-                background-color: #383838;
-            }
-            &:nth-child(even) {
-                background-color: #292929;
-            }
-        }
-
-        &__td {
-            padding: 5px 0;
-            padding-left: 12px;
-        }
     }
 }
