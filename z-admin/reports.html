@@ -120,6 +120,129 @@
                         <p class="site__title">Generuj raport</p>
                         <div class="site__line"></div>
                     </div>
+
+                    <form class="form" action="#">
+
+                        <div class="form__container">
+                            <div class="form__item">
+                                <label for="reportName" class="form__item__label">Nazwa raportu</label>
+                                <input type="text" name="reportName" id="reportName" class="form__item__input">
+                            </div>
+                        </div>
+
+                        <div class="form__section">
+                            <p class="form__section__title">Przedział czasowy</p>
+                            <div class="form__section__line"></div>
+                        </div>
+
+                        <div class="form__container">
+                            <div class="search search__container">
+                                <label for="search__bar__reports--from" class="search__label">Od: </label>
+                                <input type="date" name="search__bar__reports--from" id="search__bar__reports--from" class="form__item__input">
+                            </div>
+                            
+                            <div class="search search__container">
+                                <label for="search__bar__reports--to" class="search__label searchBar--reports">Do: </label>
+                                <input type="date" name="search__bar__reports--to" id="search__bar__reports--to" class="form__item__input">
+                            </div>
+                        </div>
+                        
+                        <div class="form__section">
+                            <p class="form__section__title">Złożoność raportu</p>
+                            <div class="form__section__line"></div>
+                        </div>
+
+                        <div class="form__container">
+                            <div class="report__container">
+                                <label for="moneyCheckbox" class="form__item__label--reports">Finanse</label>
+                                <input type="checkbox" name="moneyCheckbox" id="moneyCheckbox" class="form__item__label__checkbox form__item__label__checkbox--reports">
+                            </div>
+                            <div class="report__container">
+                                <label for="apartamentCheckbox" class="form__item__label--reports">Mieszkania</label>
+                                <input type="checkbox" name="apartamentCheckbox" id="apartamentCheckbox" class="form__item__label__checkbox form__item__label__checkbox--reports">
+                            </div>
+                            <div class="report__container">
+                                <label for="tentantsCheckbox" class="form__item__label--reports">Najemcy</label>
+                                <input type="checkbox" name="tentantsCheckbox" id="tentantsCheckbox" class="form__item__label__checkbox form__item__label__checkbox--reports">
+                            </div>
+                        </div>
+
+                        <div class="checkbox__wrapper">
+                            <div class="checkbox__item">
+                                <div class="form__section">
+                                    <p class="form__section__title form__section__title--checkbox">Finanse</p>
+                                    <div class="form__section__line form__section__line--reports"></div>
+                                </div>
+
+                                <div class="checkbox__container">
+                                    <label for="option1" class="checkbox__container--label">Miesięczne przychody</label>
+                                    <input type="checkbox" name="option1" id="option1" class="checkbox__container--checkbox">
+                                </div>
+                                <div class="checkbox__container">
+                                    <label for="option2" class="checkbox__container--label">Miesięczne przychody</label>
+                                    <input type="checkbox" name="option2" id="option2" class="checkbox__container--checkbox">
+                                </div>
+                                <div class="checkbox__container">
+                                    <label for="option3" class="checkbox__container--label">Miesięczne </label>
+                                    <input type="checkbox" name="option3" id="option3" class="checkbox__container--checkbox">
+                                </div>
+                                <div class="checkbox__container">
+                                    <label for="option4" class="checkbox__container--label">Miesięczne przychody</label>
+                                    <input type="checkbox" name="option4" id="option4" class="checkbox__container--checkbox">
+                                </div>
+                            </div>
+                            <div class="checkbox__item">
+                                <div class="form__section">
+                                    <p class="form__section__title form__section__title--checkbox">Mieszkania</p>
+                                    <div class="form__section__line form__section__line--reports"></div>
+                                </div>
+
+                                <div class="checkbox__container">
+                                    <label for="option5" class="checkbox__container--label">Miesięczne przychody</label>
+                                    <input type="checkbox" name="option5" id="option5" class="checkbox__container--checkbox">
+                                </div>
+                                <div class="checkbox__container">
+                                    <label for="option6" class="checkbox__container--label">Miesięczne przychody</label>
+                                    <input type="checkbox" name="option6" id="option6" class="checkbox__container--checkbox">
+                                </div>
+                                <div class="checkbox__container">
+                                    <label for="option7" class="checkbox__container--label">Miesięczne przychody</label>
+                                    <input type="checkbox" name="option7" id="option7" class="checkbox__container--checkbox">
+                                </div>
+                                <div class="checkbox__container">
+                                    <label for="option8" class="checkbox__container--label">Miesięczne przychody</label>
+                                    <input type="checkbox" name="option8" id="option8" class="checkbox__container--checkbox">
+                                </div>
+                            </div>
+                            <div class="checkbox__item">
+                                <div class="form__section">
+                                    <p class="form__section__title form__section__title--checkbox">Najemcy</p>
+                                    <div class="form__section__line form__section__line--reports"></div>
+                                </div>
+
+                                <div class="checkbox__container">
+                                    <label for="option9" class="checkbox__container--label">Miesięczne przychody</label>
+                                    <input type="checkbox" name="option9" id="option9" class="checkbox__container--checkbox">
+                                </div>
+                                <div class="checkbox__container">
+                                    <label for="option10" class="checkbox__container--label">Miesięczne przychody</label>
+                                    <input type="checkbox" name="option10" id="option10" class="checkbox__container--checkbox">
+                                </div>
+                                <div class="checkbox__container">
+                                    <label for="option11" class="checkbox__container--label">Miesięczne przychody</label>
+                                    <input type="checkbox" name="option11" id="option11" class="checkbox__container--checkbox">
+                                </div>
+                                <div class="checkbox__container">
+                                    <label for="option12" class="checkbox__container--label">Miesięczne przychody</label>
+                                    <input type="checkbox" name="option12" id="option12" class="checkbox__container--checkbox">
+                                </div>
+                            </div>
+                        </div>
+                         
+
+                        <button class="button button--primary button--space">Dodaj wspólnote</button>
+
+                    </form>
                 </main>
 
             </div>

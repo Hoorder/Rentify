@@ -19,6 +19,52 @@
 </head>
 
 <body>
+
+    <div class="edit__container">
+        <div class="edit__card">
+            <i class="fa-regular fa-circle-xmark exit" id="exitBtn"></i>
+            <div class="site site__edit">
+                <p class="site__title">Edytuj wspólnote</p>
+                <div class="site__line"></div>
+            </div>
+            <form class="form" action="#">
+
+                <div class="form__section">
+                    <p class="form__section__title">Informacje wstępne</p>
+                    <div class="form__section__line"></div>
+                </div>
+
+                <div class="form__container">
+                    <div class="form__item">
+                        <label for="assocName" class="form__item__label">Nazwa wspólnoty mieszkaniowej</label>
+                        <input type="text" name="assocName" id="assocName" class="form__item__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="officeAdr" class="form__item__label">Adres biura</label>
+                        <input type="area" name="officeAdr" id="officeAdr" class="form__item__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="workHour" class="form__item__label">Godziny pracy</label>
+                        <input type="text" name="workHour" id="workHour" class="form__item__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="phoneNumber" class="form__item__label">Numer telefonu</label>
+                        <input type="text" name="phoneNumber" id="phoneNumber" class="form__item__input">
+                    </div>
+                </div>
+
+                <div class="form__container">
+                    <button class="button button--primary button--space">Dodaj wspólnote</button>
+                    <div class="information">
+                        <i class="fa-solid fa-circle-info information__icon" aria-hidden="true"></i>
+                        <p class="information__decription">Wspólnotę mieszkaniową <br> wiąże się z mieszkaniem</p>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
     <div class="wrapper">
 
         <nav class="navigation">
@@ -157,6 +203,41 @@
                         </div>
 
                     </form>
+
+                    <div class="housingAssoc__container">
+                        <div class="form__section form__section--flex">
+                            <p class="form__section__title">Wspólnoty</p>
+                            <div class="form__section__line"></div>
+                        </div>
+
+                        <table class="tentant">
+                            <thead class="tentant__head">
+                                <tr class="tentant__head__tr">
+                                    <th class="tentant__head__th">ID</th>
+                                    <th class="tentant__head__th">Nazwa wspólnoty</th>
+                                    <th class="tentant__head__th">Adres biura</th>
+                                    <th class="tentant__head__th">Godziny pracy</th>
+                                    <th class="tentant__head__th">Numer telefonu</th>
+                                    <th class="tentant__head__th">Akcja</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tentant__body">
+                                <tr class="tentant__body__tr">
+                                    <td class="tentant__body__td">1</td>
+                                    <td class="tentant__body__td">Wspólnota Kaczmarek</td>
+                                    <td class="tentant__body__td">Ul. Miła 4G</td>
+                                    <td class="tentant__body__td">17:00 - 20:00</td>
+                                    <td class="tentant__body__td">+48 942 042 993</td>
+                                    <td class="tentant__body__td">
+                                        <button class="button button--edit" id="editButton">Edytuj</button>
+                                        <button class="button button--delete" id="deleteButton">Usuń</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
                 </main>
 
             </div>
@@ -167,6 +248,7 @@
     </div>
 
     <script src="https://kit.fontawesome.com/d25000ab6d.js" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
