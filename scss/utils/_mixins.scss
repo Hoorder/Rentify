@@ -1,0 +1,18 @@
+$breakpoints: (
+    phones: "(min-width: 600px)",
+    tablets: "(min-width: 768px)",
+    laptops: "(min-width: 992px)",
+    large: "(min-width: 1200px)",
+);
+
+@mixin mediaQ($breakpoint) {
+    $size: map-get($breakpoints, $breakpoint);
+
+    @if ($size) {
+        @media #{$size} {
+            @content;
+        }
+    } @else {
+        @error '"#{breakpoint}" - Misdiagnosis';
+    }
+}

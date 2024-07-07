@@ -1,8 +1,25 @@
 $primary-color: #222222;
 $secondary-color: #787D58;
+$menu: #262626;
 
 $red: #7E2929;
 $white: #F1F1F1;
 $gray: #f1f1f16a;
 
 $information: #29465B;
+$disabled: #f1f1f16a;
+
+$form__odd: #383838;
+$form__even: #292929;
+
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --red: #{$red};
+  --white: #{$white};
+  --gray: #{$gray};
+  --disabled: #{$disabled};
+  --menu: #{$menu};
+  --form__odd: #{$form__odd};
+  --form__even: #{$form__even};
+}

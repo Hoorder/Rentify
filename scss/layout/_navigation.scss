@@ -4,12 +4,17 @@
     // width: 230px;
     flex: 0 0 230px;
     height: 100vh;
-    border-right: 0.5px solid $gray;
+    border-right: 0.5px solid var(--gray);
     position: sticky;
-    background-color: #262626;
+    background-color: var(--menu);
     display: flex;
     flex-direction: column;
-    
+            
+    @include mediaQ(phones) {
+        
+        width: 400px;
+    }
+
     &__logo {
         display: flex;
         flex-direction: column;
@@ -31,6 +36,7 @@
                 font-family: "Inter", sans-serif;
                 font-weight: bold;
                 font-size: 30px;
+                color: #F1F1F1;
             }
         }
         
@@ -68,11 +74,11 @@
     &__section {
         display: flex;
         flex-direction: column;
-        border-bottom: 0.5px solid $gray;
+        border-bottom: 0.5px solid var(--gray);
         padding-bottom: 15px;
 
         &__name {
-            color: $gray;
+            color: var(--gray);
             margin: 14px;
             margin-left: 10px;
         }
@@ -86,21 +92,23 @@
         }
 
         &__link {
-            color: $white;
+            color: var(--white);
             text-decoration: none;
             display: flex;
             align-items: center;
             gap: 20px;
             height: 41px;
             padding-left: 20px;
+            transition: .2s;
 
             &:hover {
                 background-color: $secondary-color;
-                transition: .4s;
+                color: $white;
             }
 
             &--active {
                 background-color: $secondary-color;
+                color: $white;
             }
         }
         

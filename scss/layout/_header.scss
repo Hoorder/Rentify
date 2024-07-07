@@ -2,11 +2,10 @@
 
 .header {
     flex: 0 0 53px;
-    border-bottom: $gray;
     display: flex;
     align-items: center;
     justify-content: right;
-    border-bottom: 1px solid $gray;
+    border-bottom: 1px solid var(--gray);
 
     .profile {
         display: flex;

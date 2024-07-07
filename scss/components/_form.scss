@@ -18,10 +18,10 @@
         &__tr {
             border-bottom: 2px solid $primary-color;
             &:nth-child(odd) {
-                background-color: #383838;
+                background-color: var(--form__odd);
             }
             &:nth-child(even) {
-                background-color: #292929;
+                background-color: var(--form__even);
             }
         }
 

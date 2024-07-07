@@ -12,7 +12,7 @@
 
     &__line {
         width: 250px;
-        border-bottom: 1px solid $secondary-color;
+        border-bottom: 1px solid var(--secondary-color);
     }
 }
 
@@ -33,7 +33,7 @@
         }
 
         &__title {
-            color: $gray;
+            color: var(--gray);
             padding-bottom: 10px;
             padding-left: 20px;
             font-weight: 300;
@@ -42,7 +42,7 @@
         &__line {
             width: 65%;
             max-width: 980px;
-            border-bottom: 1px solid $gray;
+            border-bottom: 1px solid var(--gray);
             padding-bottom: 5px;
         }
     }
@@ -67,7 +67,7 @@
         &__input {
             width: 230px;
             height: 37px;
-            color: $white;
+            color: var(--white);
             background-color: inherit;
             border: 1px solid #3E4145;
             border-radius: 4px;

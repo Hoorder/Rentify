@@ -56,5 +56,5 @@
     
 }
 .form__item__input[disabled] {
-    color: $gray; /* Czarny kolor tekstu */
+    color: var(--disabled); /* Czarny kolor tekstu */
 }
