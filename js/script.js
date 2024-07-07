@@ -1,4 +1,3 @@
-
 const editButtons = document.querySelectorAll("#editButton");
 const editExitButton = document.querySelector("#exitBtn");
 const editContainer = document.querySelector(".edit__container");

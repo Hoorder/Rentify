@@ -1,0 +1,62 @@
+@import '../utils/variables';
+
+.circle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-49%);
+    top: -300px;
+    width: 500px;
+    height: 500px;
+    background-color: $secondary-color;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .circle__logo {
+        position: relative;
+        top: 145px;
+        width: 90px;
+    }
+
+    .circle__logo__name {
+        position: relative;
+        top: 140px;
+        font-size: 45px;
+        font-weight: 500;
+    }
+}
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+
+    &__heading {
+        font-size: 35px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    .login__form__field {
+        margin-bottom: 10px;
+    }
+
+    .login__form--input {
+        width: 250px;
+        height: 45px;
+        color: $white;
+        background-color: inherit;
+        border: 1px solid #3E4145;
+        border-radius: 4px;
+        padding-left: 15px;
+        font-size: 17px;
+    }
+}

@@ -14,6 +14,24 @@
         padding: 12px;
         background-color: $secondary-color;
     }
+
+    &--secoundary {
+        margin-top: 15px;
+        width: 210px;
+        max-height: 41px;
+        padding: 12px;
+        background-color: #E7E9DD;
+        color: $primary-color;
+        font-weight: bold;
+    }
+
+    &--third {
+        margin-top: 15px;
+        width: 250px;
+        max-height: 41px;
+        padding: 12px;
+        background-color: $secondary-color;
+    }
     
     &--space {
         margin-right: 10px;

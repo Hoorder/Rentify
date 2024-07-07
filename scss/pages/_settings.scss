@@ -20,6 +20,10 @@
         .form__container {
             justify-content: left;
 
+            &--center {
+                flex-wrap: nowrap;
+            }
+            
             .form__item--hiden {
                 display: none;
             }
@@ -40,7 +44,7 @@
             .form__item__input--accountAdress {
                 width: 240px;
             }
-            
+
             option {
                 color: black;
             }
@@ -50,4 +54,7 @@
         }
     }
     
+}
+.form__item__input[disabled] {
+    color: $gray; /* Czarny kolor tekstu */
 }

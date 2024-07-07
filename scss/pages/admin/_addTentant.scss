@@ -28,6 +28,10 @@
         flex-direction: column;
         flex: 1;
 
+        &--space {
+            margin-top: 20px;
+        }
+
         &__title {
             color: $gray;
             padding-bottom: 10px;
@@ -79,25 +83,27 @@
             height: inherit;
             max-width: 480px;
             width: 500px;
+            padding-top: 5px;
+            padding-right: 10px;
         }
     }
 
-    .information {
-        display: flex;
-        align-items: center;
-        background-color: #29465B;
-        padding: 5px;
-        width: 230px;
-        height: 54px;
-        margin-top: 12px;
+}
+.information {
+    display: flex;
+    align-items: center;
+    background-color: #29465B;
+    padding: 5px;
+    width: 230px;
+    height: 54px;
+    margin-top: 12px;
 
-        &__icon {
-            padding: 0 10px;
-            font-size: 24px;
-        }
+    &__icon {
+        padding: 0 10px;
+        font-size: 24px;
+    }
 
-        &__decription {
-            line-height: 16px;
-        }
+    &__decription {
+        line-height: 16px;
     }
 }
