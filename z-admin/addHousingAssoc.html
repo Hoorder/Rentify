@@ -67,8 +67,10 @@
 
     <div class="wrapper">
 
-        <nav class="navigation">
+        <nav class="navigation" id="navigation">
             <div class="navigation__logo">
+                <i class="fa-solid fa-xmark exit navigation--exit" id="navigation--exit"></i>
+
                 <div class="navigation__logo__box">
                     <img src="../image/logoNav.png" alt="" class="navigation__logo__box--img">
                     <p class="navigation__logo__box--name">Rentify</p>
@@ -151,13 +153,19 @@
         <div class="wrapper__right">
 
             <header class="header">
-
-                <div class="profile">
+                <div class="profile__container">
+                    <i class="fa-solid fa-bars hamburger__icon" id="hamburger--icon" aria-hidden="true"></i>
+                </div>
+                <div class="profile__container">
+                    <p class="app--name">Rentify</p>
+                </div>
+                <div class="profile__container">
                     <i class="fa-solid fa-user profile__icon" aria-hidden="true"></i>
                     <p class="profile--data">Kamil Jan Czenczek</p>
-                    <i class="fa-solid fa-chevron-down profile__icon" aria-hidden="true"></i>
+                    <a href="../login.html" class="none--color">
+                        <i class="fa-solid fa-right-from-bracket profile__icon" aria-hidden="true"></i>
+                    </a>
                 </div>
-
             </header>
     
             <div class="wrapper__right__bottom">
@@ -242,7 +250,7 @@
 
             </div>
             
-            <p class="aboutRights">&#169; All rights reserved Rentify 2023-2024</p>
+            <p class="aboutRights" id="footerRights">&#169; All rights reserved Rentify 2023-<span id="currentYear"></span></p>
         </div>
 
     </div>
@@ -252,6 +260,7 @@
     <script src="https://kit.fontawesome.com/d25000ab6d.js" crossorigin="anonymous"></script>
     <script src="../js/tooltip.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/exit.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 
 .navigation {
-    // width: 230px;
     flex: 0 0 230px;
     height: 100vh;
     border-right: 0.5px solid var(--gray);
@@ -9,10 +9,17 @@
     background-color: var(--menu);
     display: flex;
     flex-direction: column;
-            
+    z-index: 1;
+    transition: .3s;
+
+    &--show {
+        transform: translatex(0px);
+    }
+
     @include mediaQ(phones) {
-        
-        width: 400px;
+        position: fixed;
+        width: 300px;
+        transform: translatex(-300px);
     }
 
     &__logo {
@@ -22,6 +29,19 @@
         justify-content: center;
         background-color: $secondary-color;
         min-height: 105px;
+
+        .navigation--exit {
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 40px;
+            visibility: hidden;
+
+            @include mediaQ(phones) {
+                visibility: visible;
+            }
+        }
 
         &__box {
             display: flex;
@@ -46,7 +66,7 @@
     }
 
     &__container {
-        overflow: hidden;
+        overflow: auto;
         transition: .2s;
 
         &::-webkit-scrollbar {

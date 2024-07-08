@@ -1,8 +1,8 @@
 $breakpoints: (
-    phones: "(min-width: 600px)",
-    tablets: "(min-width: 768px)",
-    laptops: "(min-width: 992px)",
-    large: "(min-width: 1200px)",
+    phones: "(max-width: 600px)",
+    tablets: "(max-width: 768px)",
+    laptops: "(max-width: 992px)",
+    large: "(max-width: 1200px)",
 );
 
 @mixin mediaQ($breakpoint) {
