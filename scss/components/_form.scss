@@ -1,7 +1,15 @@
+@import '../utils/mixins';
+
 .table {
     border-collapse: collapse;
     margin-top: 10px;
     width: 100%;
+
+    @include mediaQ(phones) {
+        display: block;
+        overflow: auto;
+        width: 93vw;
+    }
     
     &__head {
         background-color: $secondary-color;
