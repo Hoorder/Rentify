@@ -70,3 +70,7 @@
 .form__item__input[disabled] {
     color: var(--disabled); /* Czarny kolor tekstu */
 }
+
+.settings__form--none {
+    display: none;
+}

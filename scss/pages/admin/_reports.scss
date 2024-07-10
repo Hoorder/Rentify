@@ -42,6 +42,10 @@
         width: 200px;
         margin-top: 10px;
 
+        &--none {
+            display: none;
+        }
+
         .form__section__title--checkbox {
             padding-top: 20px;
         }

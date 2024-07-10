@@ -124,7 +124,7 @@
                                 </div>
                                 <div class="form__item">
                                     <label for="settingsPhoneNumber" class="form__item__label">Numer telefonu</label>
-                                    <input type="text" name="settingsPhoneNumber" id="settingsPhoneNumber" class="form__item__input" value="+48 729 042 882">
+                                    <input type="text" name="settingsPhoneNumber" id="settingsPhoneNumber" class="form__item__input" value="+48 729 042 882" disabled>
                                 </div>
                             </div>
 
@@ -140,11 +140,7 @@
                             <div class="form__container">
                                 <div class="form__item">
                                     <label for="settingsEmail" class="form__item__label">Adres e-mail</label>
-                                    <input type="text" name="settingsEmail" id="settingsEmail" class="form__item__input" value="kamil.czenczek@o2.pl">
-                                </div>
-                                <div class="form__item">
-                                    <label for="settingsPassword" class="form__item__label">Hasło</label>
-                                    <input type="password" name="settingsPassword" id="settingsPassword" class="form__item__input" disabled value="tutajhasło">
+                                    <input type="text" name="settingsEmail" id="settingsEmail" class="form__item__input" value="kamil.czenczek@o2.pl" disabled>
                                 </div>
                                 
                                 <div class="form__item form__item--pswdchange">
@@ -152,7 +148,11 @@
                                     <input type="checkbox" name="passwordChange" id="passwordChange" class="form__item__label__checkbox">
                                 </div>
 
-                                <form class="settings__forms" action="#">
+                                <form class="settings__forms settings__form--none" id="settings__forms--password__container" action="#">    
+                                    <div class="form__item">
+                                        <label for="settingsCurrentPassword" class="form__item__label">Obecne hasło</label>
+                                        <input type="password" name="settingsCurrentPassword" id="settingsCurrentPassword" class="form__item__input">
+                                    </div>
                                     <div class="form__item ">
                                         <label for="settingsNewPassword" class="form__item__label">Nowe hasło</label>
                                         <input type="password" name="settingsNewPassword" id="settingsNewPassword" class="form__item__input">
@@ -208,6 +208,7 @@
     <script src="https://kit.fontawesome.com/d25000ab6d.js" crossorigin="anonymous"></script>
     <script src="../js/theme.js"></script>
     <script src="../js/exit.js"></script>
+    <script src="../js/settings.js"></script>
 </body>
 
 </html>

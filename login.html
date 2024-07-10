@@ -28,15 +28,15 @@
 
         <p class="login__heading">Witaj ponownie</h1>
 
-        <form class="login__form" action="/login" method="POST">
+        <form class="login__form" action="/z-admin/index.html" method="POST">
 
           <div class="login__form__field">
             <label for="username" class="login__form--label" hidden>Login:</label>
-            <input type="text" id="username" name="username" class="login__form--input" placeholder="Adres e-mail:">
+            <input type="text" id="username" name="username" class="login__form--input" placeholder="Adres e-mail:" autocomplete="username" required>
           </div>
           <div class="login__form__field">
             <label for="password" class="login__form--label" hidden>Hasło:</label>
-            <input type="password" id="password" name="password" class="login__form--input" placeholder="Hasło">
+            <input type="password" id="password" name="password" class="login__form--input" placeholder="Hasło" autocomplete="current-password" required>
           </div>
 
           <button type="submit" class="button button--third">Zaloguj</button>

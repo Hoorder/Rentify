@@ -60,10 +60,6 @@
         display: flex;
         flex-wrap: wrap;
         margin-top: 10px;
-
-        @include mediaQ(phones) {
-            // flex-direction: column;
-        }
     }
 
     &__item {
@@ -86,7 +82,7 @@
             padding-left: 15px;
 
             &::-webkit-calendar-picker-indicator {
-                filter: invert(50%); /* przykładowa zmiana koloru */
+                filter: invert(50%);
                 padding-right: 15px;
             }
         }

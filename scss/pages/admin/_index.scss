@@ -137,14 +137,26 @@
       flex-direction: column;
       text-align: left;
       font-family: 'Inter', sans-serif;
+      
+      @include mediaQ(phones) {
+        padding: 10px;
+      }
 
       &__description {
         font-size: 20px;
+
+        @include mediaQ(phones) {
+          font-size: 17px;
+        }
       }
 
       &__money {
         font-size: 35px;
         font-weight: 500;
+        
+        @include mediaQ(phones) {
+          font-size: 30px;
+        }
       }
     }
   }

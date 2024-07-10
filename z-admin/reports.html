@@ -134,7 +134,7 @@
                         <div class="form__container">
                             <div class="form__item">
                                 <label for="reportName" class="form__item__label">Nazwa raportu</label>
-                                <input type="text" name="reportName" id="reportName" class="form__item__input">
+                                <input type="text" name="reportName" id="reportName" class="form__item__input" required>
                             </div>
                         </div>
 
@@ -146,12 +146,12 @@
                         <div class="form__container">
                             <div class="search search__container__checkbox">
                                 <label for="search__bar__reports--from" class="search__label">Od: </label>
-                                <input type="date" name="search__bar__reports--from" id="search__bar__reports--from" class="form__item__input">
+                                <input type="date" name="search__bar__reports--from" id="search__bar__reports--from" class="form__item__input" required>
                             </div>
                             
                             <div class="search search__container__checkbox">
                                 <label for="search__bar__reports--to" class="search__label searchBar--reports">Do: </label>
-                                <input type="date" name="search__bar__reports--to" id="search__bar__reports--to" class="form__item__input">
+                                <input type="date" name="search__bar__reports--to" id="search__bar__reports--to" class="form__item__input" required>
                             </div>
                         </div>
                         
@@ -176,7 +176,7 @@
                         </div>
 
                         <div class="checkbox__wrapper">
-                            <div class="checkbox__item">
+                            <div class="checkbox__item checkbox__item--none" id="moneyContainer">
                                 <div class="form__section">
                                     <p class="form__section__title form__section__title--checkbox">Finanse</p>
                                     <div class="form__section__line form__section__line--reports"></div>
@@ -199,7 +199,7 @@
                                     <input type="checkbox" name="option4" id="option4" class="checkbox__container--checkbox">
                                 </div>
                             </div>
-                            <div class="checkbox__item">
+                            <div class="checkbox__item checkbox__item--none" id="apartamentContainer">
                                 <div class="form__section">
                                     <p class="form__section__title form__section__title--checkbox">Mieszkania</p>
                                     <div class="form__section__line form__section__line--reports"></div>
@@ -222,7 +222,7 @@
                                     <input type="checkbox" name="option8" id="option8" class="checkbox__container--checkbox">
                                 </div>
                             </div>
-                            <div class="checkbox__item">
+                            <div class="checkbox__item checkbox__item--none" id="tentantsContainer">
                                 <div class="form__section">
                                     <p class="form__section__title form__section__title--checkbox">Najemcy</p>
                                     <div class="form__section__line form__section__line--reports"></div>
@@ -262,6 +262,7 @@
 
     <script src="https://kit.fontawesome.com/d25000ab6d.js" crossorigin="anonymous"></script>
     <script src="../js/exit.js"></script>
+    <script src="../js/reports.js"></script>
 </body>
 
 </html>

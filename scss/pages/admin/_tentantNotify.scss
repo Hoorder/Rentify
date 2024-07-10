@@ -27,7 +27,6 @@
     width: 500px;
 
     @include mediaQ(phones) {
-        // width: 90vw;
         width: 100%;
         flex-direction: column;
     }

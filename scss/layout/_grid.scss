@@ -4,7 +4,7 @@
 .wrapper {
     display: flex;
     height: 100vh;
-    
+
     &__right {
         display: flex;
         flex-direction: column;
@@ -19,7 +19,7 @@
     flex: 1;
     margin-top: 20px;
     margin-left: 30px;
-    
+
     @include mediaQ(phones) {
         margin-left: 15px;
     }
@@ -31,11 +31,13 @@
     &::-webkit-scrollbar-thumb {
         background: #494949;
         border-radius: 10px;
-      }
+    }
+
     &::-webkit-scrollbar-track {
         background: $primary-color;
         border-radius: 10px;
-      }
+    }
+
     &::-webkit-scrollbar-thumb:hover {
         cursor: grab;
         background: #575656;
@@ -45,7 +47,7 @@
         justify-content: center;
         align-items: baseline;
     }
-    
+
 }
 
 .container {
@@ -67,4 +69,9 @@
     text-align: center;
     margin: 20px;
     font-weight: 100;
+
+    @include mediaQ(phones) {
+        flex: 0 0 10vh;
+        display: block;
+    }
 }
