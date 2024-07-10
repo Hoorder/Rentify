@@ -8,13 +8,14 @@
     @include mediaQ(phones) {
         display: block;
         overflow: auto;
-        width: 93vw;
+        width: 90vw;
     }
     
     &__head {
         background-color: $secondary-color;
         
         &__th {
+            white-space: nowrap;
             font-weight: 400;
             padding: 10px;
             text-align: left;
@@ -37,6 +38,7 @@
             padding: 5px 0;
             padding-left: 12px;
             height: 39px;
+            white-space: nowrap;
         }
     }
 }

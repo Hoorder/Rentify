@@ -7,10 +7,18 @@
 .search__container {
     display: flex;
 
+    @include mediaQ(phones) {
+        flex-direction: column;
+    }
+    
     .search {
 
         &:nth-child(2) {
             margin-left: 10px;
+
+            @include mediaQ(phones) {
+                margin-left: 0px;
+            }
         }
     }
 }

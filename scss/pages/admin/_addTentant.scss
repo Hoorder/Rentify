@@ -8,6 +8,10 @@
         font-size: 24px;
         text-transform: uppercase;
         margin-bottom: 15px;
+
+        @include mediaQ(phones) {
+            font-size: 20px;
+        }
     }
 
     &__line {
@@ -22,6 +26,10 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-left: 20px;
+
+    @include mediaQ(phones) {
+        margin-left: 0px;
+    }
 
     &__section {
         display: flex;
@@ -52,6 +60,10 @@
         display: flex;
         flex-wrap: wrap;
         margin-top: 10px;
+
+        @include mediaQ(phones) {
+            // flex-direction: column;
+        }
     }
 
     &__item {
@@ -85,6 +97,10 @@
             width: 500px;
             padding-top: 5px;
             padding-right: 10px;
+
+            @include mediaQ(phones) {
+                width: 90vw;
+            }
         }
     }
 

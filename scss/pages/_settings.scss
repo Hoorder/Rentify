@@ -13,8 +13,16 @@
         margin-left: 40px;
         max-width: 230px;
 
+        @include mediaQ(phones) {
+            margin-left: 10px;
+        }
+
         &:nth-child(1) {
             margin-left: 20px;
+            
+            @include mediaQ(phones) {
+                margin-left: 10px;
+            }
         }
 
         .form__container {
@@ -22,6 +30,10 @@
 
             &--center {
                 flex-wrap: nowrap;
+                
+                @include mediaQ(phones) {
+                    flex-wrap: wrap;
+                }
             }
             
             .form__item--hiden {

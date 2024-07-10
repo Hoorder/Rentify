@@ -1,4 +1,5 @@
 @import '../utils/variables';
+@import '../utils/mixins';
 
 .edit__container {
     visibility: hidden;
@@ -29,6 +30,14 @@
         align-items: center;
 
         position: relative;
+
+        
+        @include mediaQ(phones) {
+            padding: 20px 10px;
+            overflow: auto;
+            height: 90vh;
+            margin: 0px;
+        }
 
         .site__edit {
             align-items: center;
